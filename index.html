@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FLY CLIENT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="logo-mark">F</span><span>FLY</span></a>
+    <nav>
+      <a href="#home">Главная</a>
+      <a href="#features">Возможности</a>
+      <a href="#download">Скачать</a>
+    </nav>
+    <button class="login-btn" data-open-auth>Войти</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="glow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">FLY CLIENT</p>
+        <h1>Твой Minecraft.<br><span>Твои правила.</span></h1>
+        <p class="lead">Современный клиент с быстрым интерфейсом и удобным управлением.</p>
+        <div class="actions">
+          <button class="primary" data-open-auth>Войти в аккаунт</button>
+          <a class="secondary" href="#download">Скачать клиент</a>
+        </div>
+      </div>
+      <div class="crystal"><span>F</span></div>
+    </section>
+
+    <section id="features" class="section">
+      <p class="eyebrow">ВОЗМОЖНОСТИ</p>
+      <h2>Всё нужное — в одном месте</h2>
+      <div class="cards">
+        <article><b>⚡ Быстрый запуск</b><p>Минимум лишних действий и понятный интерфейс.</p></article>
+        <article><b>◈ Аккаунт</b><p>Удобный вход и регистрация прямо на сайте.</p></article>
+        <article><b>✦ Современный дизайн</b><p>Тёмная неоновая визуальная система в стиле FLY.</p></article>
+      </div>
+    </section>
+
+    <section id="download" class="section download">
+      <p class="eyebrow">DOWNLOAD</p>
+      <h2>Готов к запуску?</h2>
+      <p>Скачай клиент и начинай играть.</p>
+      <button class="primary" id="downloadBtn">Скачать</button>
+    </section>
+  </main>
+
+  <div class="modal" id="authModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" data-close-auth>×</button>
+      <div class="auth-logo"><span class="logo-mark">F</span> FLY</div>
+      <h2 id="authTitle">Вход в аккаунт</h2>
+      <p id="authText">Войди, чтобы продолжить.</p>
+      <form id="authForm">
+        <input id="email" type="email" placeholder="Почта" required>
+        <input id="password" type="password" placeholder="Пароль" minlength="6" required>
+        <button class="primary wide" type="submit">Войти</button>
+      </form>
+      <button class="switch" id="switchAuth">Нет аккаунта? Зарегистрироваться</button>
+      <div class="status" id="status"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080812">
+<title>Fly Client — Minecraft 1.21.11</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars"></div>
+<header>
+  <a class="brand" href="#home"><span>FLY</span> CLIENT</a>
+  <nav>
+    <a href="#home" data-t="home">Главная</a>
+    <a href="#features" data-t="features">Возможности</a>
+    <a href="#pricing" data-t="pricing">Прайс</a>
+    <a href="#download" data-t="download">Скачать</a>
+  </nav>
+  <div class="head-actions">
+    <button id="lang">RU / EN</button>
+    <button id="openLogin" class="primary" data-t="login">Войти</button>
+  </div>
+  <button class="hamb" id="hamb">☰</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="pill">MINECRAFT 1.21.11 • FLY CLIENT</div>
+    <h1>ИГРАЙ<br><em>СВОБОДНО.</em></h1>
+    <p data-t="hero">Fly Client — современный сайт клиента Minecraft с личным кабинетом, подписками, ключами и двумя вариантами загрузки.</p>
+    <div class="actions">
+      <a class="primary big" href="#download" data-t="downloadNow">Скачать клиент</a>
+      <a class="secondary big" href="#pricing" data-t="viewPrices">Прайс</a>
+    </div>
+    <div class="live"><span></span><b data-t="online">Система онлайн</b> • Minecraft 1.21.11</div>
+  </div>
+  <div class="orb">
+    <div class="orb-ring"></div><div class="flymark">✦</div>
+    <strong>FLY</strong><small>CLIENT</small><label>1.21.11</label>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="section-head"><span>01</span><h2 data-t="featuresTitle">Возможности</h2></div>
+  <div class="cards">
+    <article><div>⚡</div><h3 data-t="f1">Быстрый интерфейс</h3><p data-t="f1p">Чистый современный дизайн без лишнего.</p></article>
+    <article><div>👤</div><h3 data-t="f2">Личный кабинет</h3><p data-t="f2p">Профиль, статус подписки и активация ключа.</p></article>
+    <article><div>🔑</div><h3 data-t="f3">Система ключей</h3><p data-t="f3p">30, 180, 365 дней или навсегда.</p></article>
+    <article><div>🌐</div><h3 data-t="f4">RU / EN</h3><p data-t="f4p">Переключение языка одним нажатием.</p></article>
+  </div>
+</section>
+
+<section id="pricing" class="section">
+  <div class="section-head"><span>02</span><h2 data-t="pricingTitle">Прайс</h2></div>
+  <div class="coming" data-t="coming">СКОРО БУДЕТ ДОСТУПНО</div>
+  <div class="prices">
+    <article><h3>30 <small data-t="days">дней</small></h3><strong>200 ₽</strong><button class="primary buy" data-t="buySoon">Скоро будет</button></article>
+    <article class="hot"><b data-t="popular">ПОПУЛЯРНЫЙ</b><h3>180 <small data-t="days">дней</small></h3><strong>500 ₽</strong><button class="primary buy" data-t="buySoon">Скоро будет</button></article>
+    <article><h3>1 <small data-t="year">год</small></h3><strong>600 ₽</strong><button class="primary buy" data-t="buySoon">Скоро будет</button></article>
+    <article><h3 data-t="forever">Навсегда</h3><strong>800 ₽</strong><button class="primary buy" data-t="buySoon">Скоро будет</button></article>
+  </div>
+</section>
+
+<section id="download" class="section">
+  <div class="section-head"><span>03</span><h2 data-t="downloadTitle">Скачать Fly Client</h2></div>
+  <div class="downloads">
+    <article><div class="icon">🚀</div><h3>Fly Launcher</h3><p data-t="launcher">Полноценный лаунчер для компьютера.</p><button class="primary unavailable" data-t="downloadSoon">Скоро будет</button></article>
+    <article><div class="icon">🧩</div><h3>Fly Mod</h3><p data-t="mod">Обычный мод для Minecraft 1.21.11.</p><button class="primary unavailable" data-t="downloadSoon">Скоро будет</button></article>
+  </div>
+</section>
+
+<section class="section account">
+  <div class="account-box">
+    <div><div class="mini">FLY ACCOUNT</div><h2 data-t="accountTitle">Твой аккаунт</h2><p data-t="accountText">Войди или зарегистрируйся, чтобы управлять подпиской.</p></div>
+    <div class="actions"><button class="primary" id="openRegister" data-t="register">Регистрация</button><button class="secondary" id="openLogin2" data-t="login">Войти</button></div>
+  </div>
+</section>
+</main>
+<footer><b>FLY CLIENT</b><span>© 2026 • Minecraft 1.21.11</span><span>RU / EN</span></footer>
+
+<div class="modal" id="modal"><div class="modal-box"><button class="close" id="close">×</button><div id="modalBody"></div></div></div>
+<script src="script.js"></script>
+</body>
+</html>

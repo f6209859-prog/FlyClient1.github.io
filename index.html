@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08030f">
+<title>Fly Client — Minecraft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="#">
+      <span class="brand-mark">F</span><span>FLY <b>CLIENT</b></span>
+    </a>
+    <nav>
+      <a href="#features">Возможности</a><a href="#prices">Тарифы</a><a href="#download">Скачать</a>
+    </nav>
+    <button class="btn btn-login" id="authBtn"><span class="user-dot">◉</span> Войти</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow"><span></span> MINECRAFT 1.21.11 <b>PC</b></div>
+      <h1>ИГРАЙ<br><strong>СВОБОДНО.</strong></h1>
+      <p>Fly Client — современный Minecraft-клиент с быстрым запуском, оптимизацией и аккуратным интерфейсом.</p>
+      <div class="actions">
+        <a class="btn primary" href="#download">Скачать клиент <span>↗</span></a>
+        <button class="btn secondary" id="registerHero">Создать аккаунт</button>
+      </div>
+      <div class="hero-note"><i></i> Доступно для Windows · Лицензия активируется в аккаунте</div>
+    </div>
+    <div class="visual-wrap">
+      <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+      <div class="crystal-card">
+        <div class="card-top"><span>FLY CLIENT</span><small>1.21.11</small></div>
+        <div class="crystal-f">F</div>
+        <div class="card-bottom"><b>FLY CLIENT</b><span>READY TO PLAY</span></div>
+      </div>
+      <div class="float-stat s1"><b>+FPS</b><span>оптимизация</span></div>
+      <div class="float-stat s2"><b>0 LAG</b><span>стабильность</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container">
+    <div class="section-head"><div><span class="kicker">01 / ВОЗМОЖНОСТИ</span><h2>Всё, что нужно<br><em>для игры.</em></h2></div><p>Чистый интерфейс, быстрый запуск и настройки, которые не мешают играть.</p></div>
+    <div class="cards">
+      <article><span class="num">01</span><div class="icon">ϟ</div><h3>Оптимизация</h3><p>Настройки для стабильной работы Minecraft и высокого FPS даже в тяжёлых сценах.</p></article>
+      <article><span class="num">02</span><div class="icon">↗</div><h3>Быстрый запуск</h3><p>Минимум лишних действий — открывай клиент, выбирай профиль и заходи в игру.</p></article>
+      <article><span class="num">03</span><div class="icon">✦</div><h3>Чистый UI</h3><p>Современная тёмная визуальная система без перегруженных меню и лишних элементов.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="prices" class="section pricing">
+  <div class="container">
+    <div class="section-head"><div><span class="kicker">02 / ДОСТУП</span><h2>Выбери свой<br><em>тариф.</em></h2></div><p>Ключ можно активировать после входа в аккаунт. Все варианты остаются доступны с одного профиля.</p></div>
+    <div class="prices">
+      <div class="price"><span class="days">30 ДНЕЙ</span><strong>200<span> ₽</span></strong><p>Для знакомства с клиентом.</p><button class="btn secondary buy" data-days="30">Выбрать</button></div>
+      <div class="price"><span class="days">180 ДНЕЙ</span><strong>500<span> ₽</span></strong><p>Полгода без лишних продлений.</p><button class="btn secondary buy" data-days="180">Выбрать</button></div>
+      <div class="price featured"><label>ПОПУЛЯРНЫЙ</label><span class="days">1 ГОД</span><strong>600<span> ₽</span></strong><p>Лучший вариант для постоянной игры.</p><button class="btn primary buy" data-days="365">Выбрать</button></div>
+      <div class="price"><span class="days">НАВСЕГДА</span><strong>800<span> ₽</span></strong><p>Один ключ — доступ без срока.</p><button class="btn secondary buy" data-days="forever">Выбрать</button></div>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="download">
+  <div class="container download-box">
+    <div><span class="kicker">03 / DOWNLOAD</span><h2>Готов к игре?</h2><p>Скачай Fly Client для компьютера и войди в свой аккаунт, чтобы продолжить.</p></div>
+    <div class="actions"><button class="btn primary" id="launcher">Скачать лаунчер <span>↓</span></button><button class="btn secondary" id="mod">Скачать мод для ПК</button></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container"><span>© 2026 FLY CLIENT</span><span>MINECRAFT / PC</span></div></footer>
+
+<div class="modal hidden" id="authModal">
+  <div class="modal-backdrop"></div>
+  <div class="modal-box auth-box">
+    <button class="close" id="closeAuth">×</button>
+    <div class="auth-logo"><span>F</span><div><b>FLY CLIENT</b><small>SECURE ACCOUNT</small></div></div>
+    <div id="loginView">
+      <span class="kicker">ACCOUNT / LOGIN</span><h2>С возвращением.</h2><p class="muted">Войди, чтобы управлять лицензией и ключами.</p>
+      <label>Логин<input id="loginUser" autocomplete="username" placeholder="Введите логин"></label>
+      <label>Пароль<input id="loginPass" type="password" autocomplete="current-password" placeholder="Введите пароль"></label>
+      <button class="btn primary full" id="loginBtn">Войти в аккаунт <span>→</span></button>
+      <p class="switch">Нет аккаунта? <button id="showRegister">Создать</button></p>
+    </div>
+    <div id="registerView" class="hidden">
+      <span class="kicker">ACCOUNT / REGISTER</span><h2>Создай аккаунт.</h2><p class="muted">Пароль хранится на сервере в защищённом виде.</p>
+      <label>Логин<input id="regUser" autocomplete="username" placeholder="От 3 до 32 символов"></label>
+      <label>Пароль<input id="regPass" type="password" autocomplete="new-password" placeholder="Минимум 8 символов"></label>
+      <label>Повтори пароль<input id="regPass2" type="password" autocomplete="new-password" placeholder="Повтори пароль"></label>
+      <button class="btn primary full" id="registerBtn">Зарегистрироваться <span>→</span></button>
+      <p class="switch">Уже есть аккаунт? <button id="showLogin">Войти</button></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal hidden" id="accountModal">
+  <div class="modal-backdrop"></div>
+  <div class="modal-box account-box">
+    <button class="close" id="closeAccount">×</button>
+    <span class="kicker">ACCOUNT / PROFILE</span><h2>Мой аккаунт.</h2>
+    <div class="profile"><div class="avatar" id="avatarLetter">F</div><div><b id="accountName">—</b><small id="accountRole">Пользователь</small></div></div>
+    <div class="line"><span>Статус</span><b class="online">● Активен</b></div>
+    <div id="adminBox" class="admin hidden"><h3>Админ-панель</h3><select id="keyDays"><option value="30">30 дней — 200 ₽</option><option value="180">180 дней — 500 ₽</option><option value="365">1 год — 600 ₽</option><option value="forever">Навсегда — 800 ₽</option></select><button class="btn primary full" id="makeKey">Создать ключ</button><pre id="keyResult"></pre></div>
+    <button class="btn danger full" id="logoutBtn">Выйти из аккаунта</button>
+  </div>
+</div>
+<div class="toast hidden" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

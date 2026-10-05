@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b12">
+  <title>Fly Client — Minecraft 1.21.11</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow glow-a"></div><div class="bg-glow glow-b"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home"><span class="brand-mark">F</span><span>Fly Client</span></a>
+    <nav>
+      <a href="#features" data-i18n="navFeatures">Возможности</a>
+      <a href="#download" data-i18n="navDownload">Скачать</a>
+      <a href="#pricing" data-i18n="navPricing">Тарифы</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-btn" id="langBtn">RU</button>
+      <button class="btn btn-ghost" id="loginOpen" data-i18n="login">Войти</button>
+      <button class="btn btn-primary" id="registerOpen" data-i18n="register">Регистрация</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="pill">MINECRAFT <b>1.21.11</b></div>
+        <h1 data-i18n="heroTitle">Fly Client — новый уровень Minecraft</h1>
+        <p data-i18n="heroText">Современный клиент с удобным лаунчером, модом и личным кабинетом. Работает на компьютере и телефоне.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-big" href="#download" data-i18n="downloadNow">Скачать сейчас</a>
+          <a class="btn btn-ghost btn-big" href="#pricing" data-i18n="viewPlans">Посмотреть тарифы</a>
+        </div>
+        <div class="stats">
+          <div><strong>1.21.11</strong><span>Minecraft</span></div>
+          <div><strong>PC + Mobile</strong><span data-i18n="support">Поддержка</span></div>
+          <div><strong>24/7</strong><span data-i18n="access">Доступ</span></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="window-top"><i></i><i></i><i></i><span>Fly Client</span></div>
+        <div class="client-preview">
+          <div class="client-logo">F</div>
+          <h3>Fly Client</h3>
+          <p>Minecraft 1.21.11</p>
+          <div class="preview-line"><span></span><b>Premium</b><em>ACTIVE</em></div>
+          <div class="preview-line"><span></span><b>FPS Boost</b><em>ON</em></div>
+          <div class="preview-line"><span></span><b>Optimization</b><em>ON</em></div>
+          <button class="preview-launch">LAUNCH</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-head"><span class="eyebrow">FLY CLIENT</span><h2 data-i18n="featuresTitle">Всё нужное в одном клиенте</h2><p data-i18n="featuresText">Сделано просто: установил, вошёл и играешь.</p></div>
+      <div class="grid-4">
+        <article class="feature"><div class="icon">⚡</div><h3 data-i18n="f1">Быстрый запуск</h3><p data-i18n="f1t">Удобный лаунчер и быстрый доступ к игре.</p></article>
+        <article class="feature"><div class="icon">🎮</div><h3 data-i18n="f2">Minecraft 1.21.11</h3><p data-i18n="f2t">Основная версия клиента — 1.21.11.</p></article>
+        <article class="feature"><div class="icon">📱</div><h3 data-i18n="f3">PC + Mobile</h3><p data-i18n="f3t">Адаптивный сайт для компьютера и телефона.</p></article>
+        <article class="feature"><div class="icon">🔐</div><h3 data-i18n="f4">Личный кабинет</h3><p data-i18n="f4t">Регистрация, вход и информация о подписке.</p></article>
+      </div>
+    </section>
+
+    <section class="section download" id="download">
+      <div class="section-head"><span class="eyebrow">DOWNLOAD</span><h2 data-i18n="downloadTitle">Два способа запуска</h2><p data-i18n="downloadText">Выбирай вариант под своё устройство.</p></div>
+      <div class="download-grid">
+        <article class="download-card"><div class="big-icon">🚀</div><div><span class="tag">PC</span><h3 data-i18n="launcher">Fly Launcher</h3><p data-i18n="launcherText">Отдельный лаунчер клиента для Windows.</p><button class="btn btn-primary" data-download="launcher" data-i18n="download">Скачать</button></div></article>
+        <article class="download-card"><div class="big-icon">🧩</div><div><span class="tag">MOD</span><h3 data-i18n="mod">Обычный мод</h3><p data-i18n="modText">Файл мода для установки в Minecraft.</p><button class="btn btn-primary" data-download="mod" data-i18n="download">Скачать</button></div></article>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="section-head"><span class="eyebrow">PRICING</span><h2 data-i18n="pricingTitle">Подписка Fly Client</h2><p data-i18n="pricingText">Покупка будет подключена после настройки платёжной системы.</p></div>
+      <div class="pricing-grid">
+        <article class="price"><span>30 DAYS</span><h3>200 ₽</h3><p data-i18n="p30">30 дней подписки</p><button class="btn btn-ghost buy" data-plan="30" data-i18n="soon">Скоро</button></article>
+        <article class="price popular"><b class="popular-badge" data-i18n="popular">ПОПУЛЯРНО</b><span>180 DAYS</span><h3>500 ₽</h3><p data-i18n="p180">180 дней подписки</p><button class="btn btn-primary buy" data-plan="180" data-i18n="soon">Скоро</button></article>
+        <article class="price"><span>1 YEAR</span><h3>600 ₽</h3><p data-i18n="p1y">1 год подписки</p><button class="btn btn-ghost buy" data-plan="365" data-i18n="soon">Скоро</button></article>
+        <article class="price"><span>LIFETIME</span><h3>800 ₽</h3><p data-i18n="pLife">Навсегда</p><button class="btn btn-ghost buy" data-plan="life" data-i18n="soon">Скоро</button></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">F</span><span>Fly Client</span></div><p>© 2026 Fly Client · Minecraft 1.21.11</p></footer>
+
+  <div class="modal hidden" id="authModal">
+    <div class="modal-box">
+      <button class="close" id="authClose">×</button>
+      <div class="modal-logo">F</div>
+      <h2 id="authTitle">Войти</h2>
+      <p id="authSubtitle">Войдите в аккаунт Fly Client</p>
+      <form id="authForm">
+        <label>Никнейм<input id="authNick" required minlength="3" maxlength="24" autocomplete="username"></label>
+        <label>Пароль<input id="authPass" type="password" required minlength="4" autocomplete="current-password"></label>
+        <button class="btn btn-primary full" id="authSubmit">Войти</button>
+      </form>
+      <button class="switch-auth" id="switchAuth">Нет аккаунта? Зарегистрироваться</button>
+      <div class="notice">Демо-режим: аккаунты сохраняются только в браузере. Для настоящей авторизации нужен сервер и база данных.</div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="accountModal">
+    <div class="modal-box account-box">
+      <button class="close" id="accountClose">×</button>
+      <div class="modal-logo">F</div>
+      <h2 id="accountNick">Аккаунт</h2>
+      <p>Fly Client · Minecraft 1.21.11</p>
+      <div class="account-info"><span>Подписка</span><b id="accountPlan">Нет подписки</b></div>
+      <div class="account-info"><span>Статус</span><b class="online">● ONLINE</b></div>
+      <div id="adminArea" class="admin-area hidden">
+        <h3>👑 Админ-панель</h3>
+        <p>Демо-генератор ключей. Ключи хранятся только в этом браузере.</p>
+        <div class="admin-row"><select id="keyDays"><option value="30">30 дней</option><option value="180">180 дней</option><option value="365">1 год</option><option value="life">Навсегда</option></select><button class="btn btn-primary" id="makeKey">Создать ключ</button></div>
+        <div id="keyOutput"></div>
+      </div>
+      <button class="btn btn-ghost full" id="logout">Выйти</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
